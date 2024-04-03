@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>*</pattern>
+        <template>I'm sorry I don't understand your response. To start over, please type "start".</template>
+    </category>
+    <category>
+        <pattern>start</pattern>
+        <template>Hello! I'm the student career bot for the Computer Science department. I will suggest a career based on your answer.
+            <button>
+                <text>Let's start!</text>
+                <postback>job traits</postback>
+            </button>
+            <button>
+                <text>No, thank you.</text>
+                <postback>end</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>job traits</pattern>
+        <template>Please choose the options that most accurately describes you:
+            <button>
+                <text>Creative</text>
+                <postback>creative jobs</postback>
+            </button>
+            <button>
+                <text>Critical thinking</text>
+                <postback>critical jobs</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>creative jobs</pattern>
+        <template>Please choose the options that most accurately describes you:
+            <button>
+                <text>Visual designing</text>
+                <postback>UXUI Designer</postback>
+            </button>
+            <button>
+                <text>Analytical thinking</text>
+                <postback>Data Scientist</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>critical jobs</pattern>
+        <template>Please choose the options that most accurately describes you:
+           <button>
+                <text>Step out of your comfort zone</text>
+                <postback>Software Developer</postback>
+            </button>
+            <button>
+                <text>Consider carefully before making a decision</text>
+                <postback>caution jobs</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>caution jobs</pattern>
+        <template>Please choose the options that most accurately describes you:
+            <button>
+                <text>Attention to detail</text>
+                <postback>Quality Engineer</postback>
+            </button>
+            <button>
+                <text>Analytical thinking</text>
+                <postback>Cyber Security</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>UXUI Designer</pattern>
+        <template>
+            You're a UX/UI designer! 
+            A UX/UI designer is a creative problem solver who crafts intuitive and visually appealing digital experiences by understanding users' needs, and designing interfaces that seamlessly blend form and function
+            <link>
+                <text>Learn more about UX designer.</text>
+                <url>https://www.indeed.com/career-advice/finding-a-job/what-is-ux-design</url>
+            </link>
+            <link>
+                <text>Learn more about UI designer.</text>
+                <url>https://www.indeed.com/career-advice/finding-a-job/what-is-ui-designer</url>
+            </link>    
+            <br></br>
+            Do you want to redo the test?
+            <button>
+                <text>Yes</text>
+                <postback>job traits</postback>
+            </button>
+            <button>    
+                <text>No</text>
+                <postback>end</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>Data Scientist</pattern>
+        <template>
+            You're a data scientist! 
+            A data scientist is a skilled analyst who extracts insights from complex datasets using statistical methods and machine learning techniques to create data-driven decisions and solve real-world problems.
+            <link>
+                <text>Learn more about data scientist</text>
+                <url>https://www.indeed.com/career-advice/finding-a-job/what-is-a-data-scientist</url>
+            </link>    
+            <br></br>
+            Do you want to redo the test?
+            <button>
+                <text>Yes</text>
+                <postback>job traits</postback>
+            </button>
+            <button>    
+                <text>No</text>
+                <postback>end</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>Software Developer</pattern>
+        <template>
+            You're a software developer! A software developer is a proficient coder who designs, builds and maintains software applications, employing various programming languages and frameworks to meet functional requirements and deliver reliable solutions
+            <link>
+                <text>Learn more about software developer</text>
+                <url>https://ca.indeed.com/career-advice/finding-a-job/what-is-software-developer</url>
+            </link>    
+            <br></br>
+            Do you want to redo the test?
+            <button>
+                <text>Yes</text>
+                <postback>job traits</postback>
+            </button>
+            <button>      
+                <text>No</text>
+                <postback>end</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>Quality Engineer</pattern>
+        <template>
+            You're a quality engineer! A quality engineer is a meticulous professional who ensures the integrity and reliability of software products by implementing rigorous testing processes and continuous quality improvement strategies
+            <link>
+                <text>Learn more about Quality Engineer</text>
+                <url>https://in.indeed.com/career-advice/finding-a-job/what-is-a-quality-engineer</url>
+            </link>    
+            <br></br>
+            Do you want to redo the test?
+            <button>
+                <text>Yes</text>
+                <postback>job traits</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>end</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>Cyber Security</pattern>
+        <template>
+            You're a cyber security! Cyber security encompasses the protection of digital assets, systems, and networks from potential threats, vulnerabilities, and unauthorized access, employing proactive measures and strategies to ensure confidentiality, integrity, and availability of information.
+            <link>
+                <text>Learn more about cyber security</text>
+                <url>https://ie.indeed.com/career-advice/career-development/cyber-security#:~:text=Cyber%20security%2C%20also%20called%20cyber%20safety%20or%20computer,breaches%20or%20other%20malicious%20threats%20to%20IT%20networks.</url>
+            </link>    
+            <br></br>
+            Do you want to redo the test?
+            <button>
+                <text>Yes</text>
+                <postback>job traits</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>end</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>end</pattern>
+        <template>
+        Thank you for using WGU computer science career chatbot. You may now close the window.
+        </template>
+    </category>
+</aiml>
